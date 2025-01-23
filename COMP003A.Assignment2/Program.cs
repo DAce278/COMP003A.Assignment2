@@ -61,7 +61,7 @@ namespace COMP003A.Assignment2
                 $"Hello {firstName} {lastName}!\n" + // Welcomes user by name
                 $"Your current age is {age}.\n" + // Outputs users age
                 $"In 5 years, you will be {newAge}.\n" + // Outputs users age in 5 years
-                $"The original price of the item is ${price.ToString("N")}.\n"); // Outputs price of item
+                $"The original price of the item is ${price.ToString("N")}."); // Outputs price of item
 
 
             // output depending on user info
