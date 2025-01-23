@@ -51,26 +51,50 @@ namespace COMP003A.Assignment2
 
             double studentPrice;
             studentPrice = price * 0.9; // applying discount
-            studentPrice.ToString("F2");
            
 
             double seniorPrice;
             seniorPrice = price * 0.8; // applying discount
 
-            // outputs information
+            // output of information
             Console.WriteLine($"\n\n\n*************************************\n" +
                 $"Hello {firstName} {lastName}!\n" + // Welcomes user by name
-                $"Your current age is {age}\n" + // Outputs users age
-                $"In 5 years, you will be {newAge}\n" + // Outputs users age in 5 years
-                $"The original price of the item is ${price}.\n" + // Outputs price of item
-                $"As a student, your discounted price is ${studentPrice}\n" + // Outputs student discount
-                $"As a senior, your discounted price would be {seniorPrice}"); // Outputs senior discount
+                $"Your current age is {age}.\n" + // Outputs users age
+                $"In 5 years, you will be {newAge}.\n" + // Outputs users age in 5 years
+                $"The original price of the item is ${price.ToString("N")}.\n"); // Outputs price of item
 
 
-            
+            // output depending on user info
+
+            if (isStudent) // output depending on if user is student (would be/is)
+            {
+                Console.WriteLine($"As a student, your discounted price is {studentPrice.ToString("N")}.");
+            }
+            else
+            {
+                Console.WriteLine($"As a student, your discounted price would be {studentPrice.ToString("N")}.");
+            }
+
+            if (age >= 60) // output depending on if user is a senior citizen (would be/is)
+            {
+                Console.WriteLine($"As a Senior, your discounted price is {seniorPrice.ToString("N")}.");
+            }
+            else
+            {
+                Console.WriteLine($"As a Senior, your discounted price would be {seniorPrice.ToString("N")}.");
+            }
+
+            Console.WriteLine("*************************************");
 
 
-           
+
+
+
+
+
+
+
+
 
         }
     }
