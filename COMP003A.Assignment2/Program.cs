@@ -68,20 +68,20 @@ namespace COMP003A.Assignment2
 
             if (isStudent) // output depending on if user is student (would be/is)
             {
-                Console.WriteLine($"As a student, your discounted price is {studentPrice.ToString("N")}.");
+                Console.WriteLine($"As a student, your discounted price is ${studentPrice.ToString("N")}.");
             }
             else
             {
-                Console.WriteLine($"As a student, your discounted price would be {studentPrice.ToString("N")}.");
+                Console.WriteLine($"As a student, your discounted price would be ${studentPrice.ToString("N")}.");
             }
 
             if (age >= 60) // output depending on if user is a senior citizen (would be/is)
             {
-                Console.WriteLine($"As a Senior, your discounted price is {seniorPrice.ToString("N")}.");
+                Console.WriteLine($"As a Senior, your discounted price is ${seniorPrice.ToString("N")}.");
             }
             else
             {
-                Console.WriteLine($"As a Senior, your discounted price would be {seniorPrice.ToString("N")}.");
+                Console.WriteLine($"As a Senior, your discounted price would be ${seniorPrice.ToString("N")}.");
             }
 
             Console.WriteLine("*************************************");
